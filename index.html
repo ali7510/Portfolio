@@ -4,556 +4,642 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Daeny</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Ali Mustafa | .NET Back End Engineer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
+    <!-- Header / Navigation -->
     <header class="header">
-        <div class="container">
-            <a href="#" class="logo">Portfolio.</a>
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        <div class="container header-container">
+
+            <!-- Logo icon (square with initials) -->
+            <a href="#hero" class="logo-icon" aria-label="Home">
+                <span>A</span><span class="logo-icon-accent">M</span>
+            </a>
+
+            <!-- Centered nav links -->
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#edu-certs" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
             </nav>
+
+            <!-- CTA button + hamburger -->
+            <div class="nav-right">
+                <a href="#contact" class="btn-contact-me">Contact Me</a>
+                <div class="menu-btn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
         </div>
     </header>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Ali Mustafa</h1>
-                    <h2 class="hero-role"
-                        style="font-size: 1.5rem; color: var(--accent-secondary); margin-bottom: 0.5rem;">.NET Back End
-                        Engineer</h2>
-                    <p class="hero-subtitle">I help teams build scalable, high-performance applications through robust
-                        .NET RESTful APIs and Clean Architecture.</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View Work</a>
-                        <a href="https://www.linkedin.com/in/ali-mustafa-daeny" target="_blank"
-                            class="btn btn-secondary">LinkedIn</a>
-                        <a href="https://github.com/ali7510" target="_blank" class="btn btn-secondary"
-                            style="margin-left: var(--spacing-sm);">GitHub</a>
-                    </div>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <span class="close-menu"><i class="fas fa-times"></i></span>
+        <ul>
+            <li><a href="#hero" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About</a></li>
+            <li><a href="#edu-certs" class="mobile-link">Education</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#experience" class="mobile-link">Experience</a></li>
+            <li><a href="#services" class="mobile-link">Services</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-container-flex">
+            <div class="hero-text-content">
+                <p class="hero-subtitle">Welcome to my world</p>
+                <h1 class="hero-title">Hi, I'm <br> <span>Ali Mustafa</span></h1>
+                <h2 class="hero-role"><span>.NET Back End Engineer</span></h2>
+                <p class="hero-description">
+                    I help teams build scalable, high-performance applications through robust .NET RESTful APIs and
+                    Clean Architecture.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">My Portfolio</a>
+                    <a href="https://drive.google.com/file/d/1KFtC_gFI4JSrH6WBqp9MVD00bT1OOtlv/view?usp=drive_link"
+                        class="btn btn-outline" target="_blank">View Resume <i class="fas fa-file-alt"></i></a>
                 </div>
-                <div class="hero-image-wrapper">
-                    <!-- Actual Photo -->
-                    <img src="myphoto.jpeg" alt="Ali Mustafa" class="hero-image"
-                        style="object-fit: cover; animation: slideUp 1s ease-out forwards, float 6s ease-in-out infinite 1s; opacity: 0; transform: translateY(30px);">
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-
-                <div
-                    style="max-width: 800px; margin: 0 auto; background: rgba(255, 255, 255, 0.02); padding: 2.5rem; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-
-                    <!-- 1. The Hook & Expertise -->
-                    <div style="margin-bottom: 2rem;">
-                        <h3
-                            style="color: var(--color-off-white); font-size: 1.4rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="font-size: 1.5rem;">💻</span> Software Engineering with Purpose
-                        </h3>
-                        <p style="color: rgba(241, 233, 233, 0.9); line-height: 1.7; font-size: 1.05rem;">
-                            I am a Computer Science student at Cairo University specializing in backend development with
-                            C# and .NET. I focus on writing scalable, maintainable backend systems and continuously
-                            strengthen my understanding of software architecture and system design.
-                        </p>
-                    </div>
-
-                    <!-- 2. The USP & Experience -->
-                    <div style="margin-bottom: 2rem;">
-                        <h3
-                            style="color: var(--color-off-white); font-size: 1.4rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="font-size: 1.5rem;">⚙️</span> Solving Complex Problems
-                        </h3>
-                        <p style="color: rgba(241, 233, 233, 0.9); line-height: 1.7; font-size: 1.05rem;">
-                            I have hands-on experience building robust RESTful APIs using ASP.NET Core, implementing
-                            secure JWT authentication, and applying Clean Architecture principles. My goal is to ensure
-                            data integrity and system performance from the ground up.
-                        </p>
-                    </div>
-
-                    <!-- 3. Strength Points (Values) -->
-                    <div>
-                        <h3
-                            style="color: var(--color-off-white); font-size: 1.4rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="font-size: 1.5rem;">🚀</span> Core Proficiencies
-                        </h3>
-                        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
-                            <span
-                                style="background: rgba(152, 37, 152, 0.15); border: 1px solid rgba(152, 37, 152, 0.3); color: var(--color-off-white); padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.95rem;">Clean
-                                Architecture</span>
-                            <span
-                                style="background: rgba(228, 145, 201, 0.15); border: 1px solid rgba(228, 145, 201, 0.3); color: var(--color-off-white); padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.95rem;">RESTful
-                                API Design</span>
-                            <span
-                                style="background: rgba(152, 37, 152, 0.15); border: 1px solid rgba(152, 37, 152, 0.3); color: var(--color-off-white); padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.95rem;">SQL
-                                Server & EF Core</span>
-                            <span
-                                style="background: rgba(228, 145, 201, 0.15); border: 1px solid rgba(228, 145, 201, 0.3); color: var(--color-off-white); padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.95rem;">System
-                                Scalability</span>
-                        </div>
-                    </div>
-
+                <div class="hero-socials">
+                    <a href="https://github.com/ali7510" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ali-mustafa-daeny" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-        </section>
-
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="section-title">Technical Skills & Expertise</h2>
-
-                <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
-
-                    <!-- Skill Group 1: Backend Architecture -->
-                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; transition: transform 0.3s; cursor: default;"
-                        onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--accent-primary)';"
-                        onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255,255,255,0.05)';">
-                        <div
-                            style="background: rgba(152, 37, 152, 0.2); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            <span
-                                style="color: var(--color-pink); font-size: 1.5rem; font-weight: bold;">&lt;/&gt;</span>
-                        </div>
-                        <div>
-                            <h3 style="color: var(--color-off-white); margin-bottom: 0.5rem; font-size: 1.3rem;">Backend
-                                Architecture (.NET/C#)</h3>
-                            <p
-                                style="color: rgba(241, 233, 233, 0.7); font-size: 0.9rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
-                                ASP.NET Core • Web APIs • JWT Auth</p>
-                            <p style="color: rgba(241, 233, 233, 0.9); line-height: 1.6;">Designing secure, scalable
-                                RESTful APIs using ASP.NET Core. I implement Clean Architecture and robust
-                                authentication (JWT) to ensure high performance and maintainability across
-                                enterprise-level systems.</p>
-                        </div>
-                    </div>
-
-                    <!-- Skill Group 2: Databases -->
-                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; transition: transform 0.3s; cursor: default;"
-                        onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--accent-primary)';"
-                        onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255,255,255,0.05)';">
-                        <div
-                            style="background: rgba(152, 37, 152, 0.2); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            <span style="color: var(--color-pink); font-size: 1.5rem; font-weight: bold;">DB</span>
-                        </div>
-                        <div>
-                            <h3 style="color: var(--color-off-white); margin-bottom: 0.5rem; font-size: 1.3rem;">
-                                Database Management</h3>
-                            <p
-                                style="color: rgba(241, 233, 233, 0.7); font-size: 0.9rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
-                                SQL Server • Entity Framework Core • Dapper</p>
-                            <p style="color: rgba(241, 233, 233, 0.9); line-height: 1.6;">Building optimized databases
-                                tailored for rapid scaling. Proficient in executing complex queries and managing
-                                object-relational mapping through EF Core, alongside micro-ORMs like Dapper for critical
-                                performance paths.</p>
-                        </div>
-                    </div>
-
-                    <!-- Skill Group 3: Engineering Practices -->
-                    <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 2rem; display: flex; align-items: flex-start; gap: 1.5rem; transition: transform 0.3s; cursor: default;"
-                        onmouseover="this.style.transform='translateY(-5px)'; this.style.borderColor='var(--accent-primary)';"
-                        onmouseout="this.style.transform='translateY(0)'; this.style.borderColor='rgba(255,255,255,0.05)';">
-                        <div
-                            style="background: rgba(152, 37, 152, 0.2); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                            <span style="color: var(--color-pink); font-size: 1.5rem; font-weight: bold;">⚙️</span>
-                        </div>
-                        <div>
-                            <h3 style="color: var(--color-off-white); margin-bottom: 0.5rem; font-size: 1.3rem;">
-                                Software Engineering Practices</h3>
-                            <p
-                                style="color: rgba(241, 233, 233, 0.7); font-size: 0.9rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">
-                                Git & GitHub • Code Quality • Problem Solving</p>
-                            <p style="color: rgba(241, 233, 233, 0.9); line-height: 1.6;">Committed to delivering clean,
-                                documented, and tested code. Experienced with version control flows, collaborative
-                                development, and tackling complex logic problems methodically to produce robust final
-                                systems.</p>
-                        </div>
-                    </div>
-
-                </div>
+            <div class="img-placeholder hero-image-animate"
+                style="background-image: url('myphoto.jpeg'); background-size: cover; background-position: center;">
+                <i class="fas fa-user-code"></i>
             </div>
-        </section>
 
-        <section id="education" class="section" style="background: rgba(255, 255, 255, 0.01);">
-            <div class="container">
-                <h2 class="section-title">Education</h2>
-                <div style="max-width: 800px; margin: 0 auto; position: relative;">
-                    <!-- Timeline Line -->
-                    <div
-                        style="position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: rgba(228, 145, 201, 0.2);">
-                    </div>
 
-                    <!-- Education Item 1 -->
-                    <div style="position: relative; padding-left: 3rem; margin-bottom: 2rem;">
-                        <div
-                            style="position: absolute; left: -5px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: var(--bg-primary); border: 2px solid var(--accent-secondary);">
+        </div>
+
+        <div class="scroll-down">
+            <a href="#about">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <!-- Placeholder for User Image -->
+                    <div class="hero-img-box">
+                        <!-- Using the same placeholder or new image structure -->
+                        <div class="img-placeholder-hero">
+                            <i class="fas fa-code"></i>
                         </div>
-                        <span
-                            style="display: inline-block; padding: 0.2rem 0.8rem; background: rgba(255,255,255,0.05); border-radius: 4px; font-size: 0.85rem; color: rgba(241, 233, 233, 0.7); margin-bottom: 0.8rem; letter-spacing: 1px;">PRESENT</span>
-                        <h3 style="color: var(--color-off-white); font-size: 1.3rem; margin-bottom: 0.3rem;">Bachelor of
-                            Computer Science</h3>
-                        <h4 style="color: var(--color-pink); font-size: 1rem; margin-bottom: 1rem; font-weight: 400;">
-                            Cairo University</h4>
-                        <p style="color: rgba(241, 233, 233, 0.9); line-height: 1.6;">Focusing on software engineering
-                            principles, algorithms, and system design. Actively applying theoretical knowledge to
-                            practical backend architecture projects using the .NET ecosystem.</p>
+                        <div class="hero-visual">
+
+                        </div>
                     </div>
                 </div>
+                <div class="about-text">
+                    <h3>💻 Software Engineering with Purpose</h3>
+                    <p>
+                        I am Ali, driven by a passion for programming and system design. I am a
+                        Computer Science student at Cairo University specializing in backend development with
+                        <strong>C# and .NET</strong>. I focus on writing scalable, maintainable backend systems and
+                        continuously
+                        strengthen my understanding of software architecture and system design.
+                    </p>
+                    <p>
+                        I have hands-on experience building robust RESTful APIs using ASP.NET Core, implementing
+                        secure JWT authentication, and applying <strong>Clean Architecture</strong> principles. My goal
+                        is to ensure
+                        data integrity and system performance from the ground up.
+                    </p>
+                    <ul class="about-details">
+                        <li><span><i class="fas fa-layer-group"></i> Systems:</span> Clean Architecture, Micro-ORMs</li>
+                        <li><span><i class="fas fa-database"></i> DBs:</span> SQL Server, Postgres</li>
+                        <li><span><i class="fas fa-briefcase"></i> Availability:</span> Open to Work</li>
+                    </ul>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="experience" class="section">
-            <div class="container">
-                <h2 class="section-title">Experience</h2>
-                <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
-
-                    <!-- Experience Item 1 (C-A-R format) -->
-                    <div
-                        style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; padding: 2.5rem; position: relative; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                        <div
-                            style="position: absolute; top: 0; left: 0; width: 4px; height: 100%; background: var(--accent-primary);">
-                        </div>
-
-                        <div
-                            style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; margin-bottom: 1.5rem; gap: 1rem;">
-                            <div>
-                                <h3 style="color: var(--color-off-white); font-size: 1.4rem; margin-bottom: 0.3rem;">
-                                    .NET Backend Developer (Freelance)</h3>
-                                <h4 style="color: var(--color-pink); font-size: 1.1rem; font-weight: 500;">Upwork /
-                                    Independent Projects</h4>
+    <!-- Education & Certifications Section -->
+    <section id="edu-certs" class="section edu-certs-section">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="edu-certs-grid">
+                <!-- Education Full Width -->
+                <div class="edu-column" style="width: 100%;">
+                    <h3 class="subsection-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="education-card" style="margin-bottom: 20px;">
+                        <div class="edu-header">
+                            <div class="cert-icon-sm cert-logo-wrap">
+                                <div
+                                    style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--bg-primary); border-radius: 12px; border: 1px solid var(--accent-glow);">
+                                    <i class="fas fa-university"
+                                        style="color: var(--accent-color); font-size: 1.5rem;"></i>
+                                </div>
                             </div>
-                            <span
-                                style="background: rgba(152, 37, 152, 0.2); color: var(--color-pink); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">2023
-                                - Present</span>
-                        </div>
-
-                        <div style="display: flex; flex-direction: column; gap: 1rem;">
-                            <div
-                                style="background: rgba(255,77,77,0.05); border-left: 3px solid #ff4d4d; padding: 1rem; border-radius: 0 8px 8px 0;">
-                                <strong
-                                    style="color: #ff4d4d; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Challenge</strong>
-                                <p style="color: rgba(241, 233, 233, 0.9); margin-top: 0.3rem; font-size: 0.95rem;">
-                                    Clients needed scalable RESTful APIs for new applications but often struggled with
-                                    structuring their data layers and securing endpoints effectively.</p>
+                            <div class="edu-content">
+                                <h3>Bachelor of Computer Science</h3>
+                                <span class="edu-school">Cairo University</span>
+                                <span class="edu-date">Present</span>
+                                <p>Focusing on software engineering principles, algorithms, and system design. Actively
+                                    applying theoretical knowledge to practical backend architecture projects using the
+                                    .NET ecosystem.</p>
                             </div>
-                            <div
-                                style="background: rgba(0,204,102,0.05); border-left: 3px solid #00cc66; padding: 1rem; border-radius: 0 8px 8px 0;">
-                                <strong
-                                    style="color: #00cc66; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Action</strong>
-                                <p style="color: rgba(241, 233, 233, 0.9); margin-top: 0.3rem; font-size: 0.95rem;">
-                                    Architected solutions using ASP.NET Core and Clean Architecture. Implemented secure
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Backend Architecture (.NET/C#)</h3>
+                    <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">ASP.NET Core • Web
+                        APIs • JWT Auth</p>
+                    <p>Designing secure, scalable RESTful APIs using ASP.NET Core. I implement Clean Architecture and
+                        robust authentication to ensure high performance and maintainability.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Management</h3>
+                    <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">SQL Server • EF
+                        Core • Dapper</p>
+                    <p>Building optimized databases tailored for rapid scaling. Proficient in executing complex queries
+                        and managing ORMs alongside micro-ORMs like Dapper for critical paths.</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Software Engineering Practices</h3>
+                    <p style="font-size: 0.85rem; color: var(--accent-color); margin-bottom: 0.5rem;">Git & GitHub •
+                        Code Quality • Problem Solving</p>
+                    <p>Committed to delivering clean, documented, and tested code. Experienced with version control
+                        flows, collaborative development, and tackling complex logic problems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3 class="timeline-role">.NET Backend Developer (Freelance)</h3>
+                        <h4 class="timeline-company">
+                            <div class="company-logos">
+                                <div class="company-logo-badge">
+                                    <div
+                                        style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: var(--bg-primary); border-radius: 12px; border: 1px solid var(--accent-glow);">
+                                        <i class="fas fa-briefcase"
+                                            style="color: var(--accent-color); font-size: 1rem;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            Independent Projects
+                        </h4>
+                        <div class="timeline-desc">
+                            <dl>
+                                <dt><i class="fas fa-exclamation-circle"></i> Challenge</dt>
+                                <dd>Clients needed scalable RESTful APIs for new applications but often struggled with
+                                    structuring their data layers and securing endpoints effectively.</dd>
+
+                                <dt><i class="fas fa-tools"></i> Action</dt>
+                                <dd>Architected solutions using ASP.NET Core and Clean Architecture. Implemented secure
                                     JWT authentication and optimized data access using Entity Framework Core and Dapper.
-                                </p>
-                            </div>
-                            <div
-                                style="background: rgba(228,145,201,0.05); border-left: 3px solid var(--color-pink); padding: 1rem; border-radius: 0 8px 8px 0;">
-                                <strong
-                                    style="color: var(--color-pink); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">Result</strong>
-                                <p style="color: rgba(241, 233, 233, 0.9); margin-top: 0.3rem; font-size: 0.95rem;">
-                                    Delivered fast, maintainable APIs that reduced technical debt, scaled smoothly, and
-                                    achieved high client satisfaction and stable production deployments.</p>
-                            </div>
+                                </dd>
+
+                                <dt><i class="fas fa-check-circle"></i> Result</dt>
+                                <dd>Delivered fast, maintainable APIs that reduced technical debt, scaled smoothly, and
+                                    achieved high client satisfaction and stable production deployments.</dd>
+                            </dl>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title">Featured Case Studies</h2>
-                <div style="display: flex; flex-direction: column; gap: 3rem;">
-
-                    <!-- Project 1: 3AM - Ecommerce -->
-                    <article class="project-card"
-                        style="display: flex; flex-direction: row; flex-wrap: wrap; background: rgba(255, 255, 255, 0.02); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 15px 35px rgba(0,0,0,0.2); transition: transform 0.3s; align-items: stretch;">
-
-                        <!-- Project Image -->
-                        <div
-                            style="flex: 1; min-width: 300px; display: flex; background-color: #0b0d21; border-right: 1px solid rgba(255, 255, 255, 0.05);">
-                            <img src="3AM.png" alt="3AM Ecommerce Dashboard"
-                                style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
-                        </div>
-
-                        <!-- Project Details -->
-                        <div style="flex: 1.5; min-width: 350px; display: flex; flex-direction: column;">
-                            <div
-                                style="background: rgba(21, 23, 61, 0.8); padding: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
-                                <h3 style="color: var(--accent-secondary); margin-bottom: 0.5rem; font-size: 1.4rem;">
-                                    3AM - Luxury Car E-commerce</h3>
-                                <p style="color: rgba(241, 233, 233, 0.7); font-size: 0.9rem;">Information System Web
-                                    API for managing cars and accessories inventory.</p>
-                            </div>
-                            <div class="project-info"
-                                style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; gap: 1rem;">
-                                <div style="background: rgba(255, 255, 255, 0.03); padding: 1rem; border-radius: 8px;">
-                                    <strong style="color: #ff4d4d; font-size: 0.85rem; text-transform: uppercase;">The
-                                        Challenge</strong>
-                                    <p style="color: rgba(241, 233, 233, 0.9); font-size: 0.9rem; margin-top: 0.3rem;">
-                                        Managing a high-value, complex inventory of cars and parts while ensuring
-                                        real-time availability and processing secure transactions under heavy load.</p>
-                                </div>
-                                <div style="background: rgba(255, 255, 255, 0.03); padding: 1rem; border-radius: 8px;">
-                                    <strong style="color: #00cc66; font-size: 0.85rem; text-transform: uppercase;">The
-                                        Solution</strong>
-                                    <p style="color: rgba(241, 233, 233, 0.9); font-size: 0.9rem; margin-top: 0.3rem;">
-                                        Architected a scalable ASP.NET Core Web API using Clean Architecture.
-                                        Implemented JWT authentication and optimized complex SQL Server queries via
-                                        Entity Framework Core.</p>
-                                </div>
-                                <div
-                                    style="background: rgba(228, 145, 201, 0.05); padding: 1rem; border-radius: 8px; border: 1px solid rgba(228, 145, 201, 0.2);">
-                                    <strong
-                                        style="color: var(--color-pink); font-size: 0.85rem; text-transform: uppercase;">The
-                                        Results</strong>
-                                    <ul
-                                        style="color: var(--color-off-white); font-size: 0.9rem; margin-top: 0.3rem; padding-left: 1.2rem;">
-                                        <li><strong>40%+</strong> faster API response times for product catalogs</li>
-                                        <li>Secure execution of thousands of concurrent transactions</li>
-                                    </ul>
-                                </div>
-
-                                <div class="tech-stack" style="margin-top: 1rem;">
-                                    <span class="tech-tag">C#</span>
-                                    <span class="tech-tag">ASP.NET Core</span>
-                                    <span class="tech-tag">SQL Server</span>
-                                    <span class="tech-tag">EF Core</span>
-                                </div>
-                                <div class="project-actions" style="margin-top: auto; padding-top: 1rem;">
-                                    <a href="https://github.com/ali7510/3AM-Project" target="_blank" class="btn btn-primary"
-                                        style="width: 100%; text-align: center; padding: 0.8rem; font-size: 0.9rem;">View
-                                        Source Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 2: Gym Management System -->
-                    <article class="project-card"
-                        style="display: flex; flex-direction: row-reverse; flex-wrap: wrap; background: rgba(255, 255, 255, 0.02); border-radius: 12px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05); box-shadow: 0 15px 35px rgba(0,0,0,0.2); transition: transform 0.3s; align-items: stretch;">
-
-                        <!-- Project Image -->
-                        <div
-                            style="flex: 1; min-width: 300px; display: flex; background-color: #0b0d21; border-left: 1px solid rgba(255, 255, 255, 0.05);">
-                            <img src="GymSystem.png" alt="Gym Management Dashboard"
-                                style="width: 100%; height: 100%; object-fit: contain; padding: 1rem;">
-                        </div>
-
-                        <!-- Project Details -->
-                        <div style="flex: 1.5; min-width: 350px; display: flex; flex-direction: column;">
-                            <div
-                                style="background: rgba(21, 23, 61, 0.8); padding: 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
-                                <h3 style="color: var(--accent-secondary); margin-bottom: 0.5rem; font-size: 1.4rem;">
-                                    Gym Management System</h3>
-                                <p style="color: rgba(241, 233, 233, 0.7); font-size: 0.9rem;">Comprehensive Web API for
-                                    handling members, trainers, and plan scheduling.</p>
-                            </div>
-                            <div class="project-info"
-                                style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; gap: 1rem;">
-                                <div style="background: rgba(255, 255, 255, 0.03); padding: 1rem; border-radius: 8px;">
-                                    <strong style="color: #ff4d4d; font-size: 0.85rem; text-transform: uppercase;">The
-                                        Challenge</strong>
-                                    <p style="color: rgba(241, 233, 233, 0.9); font-size: 0.9rem; margin-top: 0.3rem;">
-                                        Inefficient tracking of memberships and heavy ORM overhead causing bottlenecks
-                                        in high-frequency class and trainer schedule updates.</p>
-                                </div>
-                                <div style="background: rgba(255, 255, 255, 0.03); padding: 1rem; border-radius: 8px;">
-                                    <strong style="color: #00cc66; font-size: 0.85rem; text-transform: uppercase;">The
-                                        Solution</strong>
-                                    <p style="color: rgba(241, 233, 233, 0.9); font-size: 0.9rem; margin-top: 0.3rem;">
-                                        Developed a high-performance RESTful API. Designed secure endpoints and replaced
-                                        standard EF tracking with Dapper micro-ORM for performance-critical scheduling
-                                        paths.</p>
-                                </div>
-                                <div
-                                    style="background: rgba(228, 145, 201, 0.05); padding: 1rem; border-radius: 8px; border: 1px solid rgba(228, 145, 201, 0.2);">
-                                    <strong
-                                        style="color: var(--color-pink); font-size: 0.85rem; text-transform: uppercase;">The
-                                        Results</strong>
-                                    <ul
-                                        style="color: var(--color-off-white); font-size: 0.9rem; margin-top: 0.3rem; padding-left: 1.2rem;">
-                                        <li><strong>60%</strong> reduction in administrative scheduling time</li>
-                                        <li><strong>3x</strong> performance boost on data-heavy endpoints</li>
-                                    </ul>
-                                </div>
-
-                                <div class="tech-stack" style="margin-top: 1rem;">
-                                    <span class="tech-tag">C#</span>
-                                    <span class="tech-tag">ASP.NET Core</span>
-                                    <span class="tech-tag">Dapper</span>
-                                </div>
-                                <div class="project-actions" style="margin-top: auto; padding-top: 1rem;">
-                                    <a href="https://github.com/ali7510/GymManagementSystemMVC" target="_blank" class="btn btn-primary"
-                                        style="width: 100%; text-align: center; padding: 0.8rem; font-size: 0.9rem;">View
-                                        Source Code</a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-
+    <!-- Services Section (Optional, kept brief) -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Database Design</h3>
+                    <p>Efficient schemas optimized for performance and scalability.</p>
+                    <div class="service-tools">
+                        <span class="service-tool-tag"><i class="fas fa-server"></i> SQL Server</span>
+                        <span class="service-tool-tag"><i class="fas fa-code"></i> Entity Framework</span>
+                        <span class="service-tool-tag"><i class="fas fa-table"></i> T-SQL</span>
+                        <span class="service-tool-tag"><i class="fas fa-project-diagram"></i> LINQ</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-code-branch"></i>
+                    <h3>API Development</h3>
+                    <p>Secure and documented RESTful APIs for web & mobile apps.</p>
+                    <div class="service-tools">
+                        <span class="service-tool-tag"><i class="fab fa-microsoft"></i> .NET Core</span>
+                        <span class="service-tool-tag"><i class="fas fa-file-alt"></i> Swagger</span>
+                        <span class="service-tool-tag"><i class="fas fa-lock"></i> JWT Auth</span>
+                        <span class="service-tool-tag"><i class="fas fa-flask"></i> Postman</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Applications</h3>
+                    <p>Building full-featured web applications using the .NET ecosystem.</p>
+                    <div class="service-tools">
+                        <span class="service-tool-tag"><i class="fab fa-microsoft"></i> ASP.NET MVC</span>
+                        <span class="service-tool-tag"><i class="fas fa-layer-group"></i> Razor Pages</span>
+                        <span class="service-tool-tag"><i class="fas fa-memory"></i> Redis</span>
+                        <span class="service-tool-tag"><i class="fas fa-credit-card"></i> Stripe</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-desktop"></i>
+                    <h3>Desktop Applications</h3>
+                    <p>Robust business logic implementation using .NET.</p>
+                    <div class="service-tools">
+                        <span class="service-tool-tag"><i class="fas fa-window-maximize"></i> WinForms</span>
+                        <span class="service-tool-tag"><i class="fas fa-paint-brush"></i> WPF</span>
+                        <span class="service-tool-tag"><i class="fas fa-code"></i> C#</span>
+                        <span class="service-tool-tag"><i class="fas fa-database"></i> SQL Server</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-        <!-- Services & Contact Hub (Slide 14 & 15) -->
-        <section id="services" class="section">
-            <div class="container">
-                <div style="text-align: center; margin-bottom: var(--spacing-lg);">
-                    <h2 class="section-title" style="margin-bottom: 0.5rem;">Services & Contact</h2>
-                    <p style="color: rgba(241, 233, 233, 0.7); font-size: 1.1rem;">Professional backend solutions to
-                        scale your business.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1: 3AM Luxury Car E-commerce -->
+                <div class="project-card">
+                    <div class="project-img-wrap">
+                        <img src="3AM.png" alt="3AM Ecommerce Dashboard" class="project-img">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-icon"><i class="fas fa-shopping-basket"></i></div>
+                        <h3 class="project-title">3AM - Luxury Car E-commerce</h3>
+                        <div class="timeline-desc">
+                            <dl>
+                                <dt><i class="fas fa-exclamation-circle"></i> Challenge</dt>
+                                <dd>Managing a high-value, complex inventory of cars and parts while ensuring real-time
+                                    availability and processing secure transactions under heavy load.</dd>
+
+                                <dt><i class="fas fa-tools"></i> Action</dt>
+                                <dd>Architected a scalable ASP.NET Core Web API using Clean Architecture. Implemented
+                                    JWT authentication and optimized complex SQL Server queries via Entity Framework
+                                    Core.</dd>
+
+                                <dt><i class="fas fa-check-circle"></i> Result</dt>
+                                <dd>Achieved 40%+ faster API response times for product catalogs and enabled secure
+                                    execution of thousands of concurrent transactions.</dd>
+                            </dl>
+                        </div>
+                        <ul class="project-tags">
+                            <li>C#</li>
+                            <li>ASP.NET Core</li>
+                            <li>SQL Server</li>
+                            <li>EF Core</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/ali7510" class="btn-sm" target="_blank"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
-
-                    <!-- Left: Contact Hub / Actions -->
-                    <div
-                        style="background: rgba(21, 23, 61, 0.9); border: 1px solid var(--accent-secondary); padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-                        <h3
-                            style="color: var(--color-off-white); font-size: 1.5rem; margin-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 1rem;">
-                            Let's Work Together</h3>
-
-                        <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2.5rem;">
-                            <!-- Email -->
-                            <div
-                                style="display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.03); padding: 1rem; border-radius: 8px;">
-                                <div
-                                    style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-secondary); display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
-                                    ✉️</div>
-                                <div>
-                                    <p
-                                        style="color: rgba(241, 233, 233, 0.6); font-size: 0.8rem; text-transform: uppercase;">
-                                        Email</p>
-                                    <a href="mailto:contact@example.com"
-                                        style="color: var(--color-off-white); text-decoration: none; font-weight: 500;">contact@example.com</a>
-                                </div>
-                            </div>
-                            <!-- LinkedIn -->
-                            <div
-                                style="display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.03); padding: 1rem; border-radius: 8px;">
-                                <div
-                                    style="width: 40px; height: 40px; border-radius: 50%; background: var(--accent-secondary); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; color: white;">
-                                    in</div>
-                                <div>
-                                    <p
-                                        style="color: rgba(241, 233, 233, 0.6); font-size: 0.8rem; text-transform: uppercase;">
-                                        LinkedIn</p>
-                                    <a href="https://www.linkedin.com/in/ali-mustafa-daeny" target="_blank"
-                                        style="color: var(--color-off-white); text-decoration: none; font-weight: 500;">/in/ali-mustafa-daeny</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Clear CTA -->
-                        <a href="#contact-form" class="btn btn-primary"
-                            style="width: 100%; text-align: center; margin-bottom: 1rem; font-size: 1rem;">Free
-                            Consultation</a>
-                        <a href="https://drive.google.com/file/d/1KFtC_gFI4JSrH6WBqp9MVD00bT1OOtlv/view?usp=drive_link"
-                            target="_blank" class="btn btn-secondary"
-                            style="width: 100%; text-align: center; margin: 0; box-sizing: border-box;">View Resume</a>
+                <!-- Project 2: Gym Management System -->
+                <div class="project-card">
+                    <div class="project-img-wrap">
+                        <img src="GymSystem.png" alt="Gym Management Dashboard" class="project-img">
                     </div>
+                    <div class="project-content">
+                        <div class="project-icon"><i class="fas fa-dumbbell"></i></div>
+                        <h3 class="project-title">Gym Management System</h3>
+                        <div class="timeline-desc">
+                            <dl>
+                                <dt><i class="fas fa-exclamation-circle"></i> Challenge</dt>
+                                <dd>Inefficient tracking of memberships and heavy ORM overhead causing bottlenecks in
+                                    high-frequency class and trainer schedule updates.</dd>
 
-                    <!-- Right: Services Grid -->
-                    <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+                                <dt><i class="fas fa-tools"></i> Action</dt>
+                                <dd>Developed a high-performance RESTful API. Designed secure endpoints and replaced
+                                    standard EF tracking with Dapper micro-ORM for performance-critical scheduling
+                                    paths.</dd>
 
-                        <!-- Service 1 -->
-                        <div style="background: rgba(255,255,255,0.02); border-left: 4px solid var(--accent-secondary); padding: 2rem; border-radius: 8px; transition: transform 0.3s;"
-                            onmouseover="this.style.transform='translateX(10px)';"
-                            onmouseout="this.style.transform='translateX(0)';">
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                                <span
-                                    style="background: rgba(228, 145, 201, 0.2); color: var(--color-pink); padding: 0.5rem; border-radius: 8px; font-weight: bold;">&lt;/&gt;</span>
-                                <h4 style="color: var(--color-off-white); font-size: 1.2rem;">Custom API Development
-                                </h4>
-                            </div>
-                            <p style="color: rgba(241, 233, 233, 0.8); font-size: 0.95rem; margin-bottom: 1rem;">
-                                Building fast, secure, and scalable RESTful APIs tailored to your application's specific
-                                business logic and performance needs.</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag"
-                                    style="background: rgba(255,255,255,0.05); border: none; padding: 0.2rem 0.6rem;">ASP.NET
-                                    Core</span>
-                                <span class="tech-tag"
-                                    style="background: rgba(255,255,255,0.05); border: none; padding: 0.2rem 0.6rem;">C#</span>
-                            </div>
+                                <dt><i class="fas fa-check-circle"></i> Result</dt>
+                                <dd>Achieved 60% reduction in administrative scheduling time and a 3x performance boost
+                                    on data-heavy endpoints.</dd>
+                            </dl>
                         </div>
-
-                        <!-- Service 2 -->
-                        <div style="background: rgba(255,255,255,0.02); border-left: 4px solid var(--accent-primary); padding: 2rem; border-radius: 8px; transition: transform 0.3s;"
-                            onmouseover="this.style.transform='translateX(10px)';"
-                            onmouseout="this.style.transform='translateX(0)';">
-                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
-                                <span
-                                    style="background: rgba(152, 37, 152, 0.2); color: var(--accent-primary); padding: 0.5rem; border-radius: 8px; font-weight: bold;">DB</span>
-                                <h4 style="color: var(--color-off-white); font-size: 1.2rem;">Database Architecture</h4>
-                            </div>
-                            <p style="color: rgba(241, 233, 233, 0.8); font-size: 0.95rem; margin-bottom: 1rem;">
-                                Designing optimized relational schemas and implementing high-performance data access
-                                layers for complex enterprise systems.</p>
-                            <div class="tech-stack">
-                                <span class="tech-tag"
-                                    style="background: rgba(255,255,255,0.05); border: none; padding: 0.2rem 0.6rem;">SQL
-                                    Server</span>
-                                <span class="tech-tag"
-                                    style="background: rgba(255,255,255,0.05); border: none; padding: 0.2rem 0.6rem;">EF
-                                    Core</span>
-                            </div>
+                        <ul class="project-tags">
+                            <li>C#</li>
+                            <li>ASP.NET Core</li>
+                            <li>Dapper</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="https://github.com/ali7510" class="btn-sm" target="_blank"><i
+                                    class="fab fa-github"></i> Code</a>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Keep the form but visually disconnect it to be targeted by the CTA -->
-        <section id="contact-form" class="section" style="padding-top: 0;">
-            <div class="container">
-                <form class="contact-form"
-                    style="background: rgba(255, 255, 255, 0.01); border: 1px dashed rgba(255,255,255,0.1);">
-                    <h3 style="text-align: center; color: var(--color-pink); margin-bottom: 1.5rem;">Send a direct
-                        message</h3>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+        </div>
+
+        <!-- Full-width marquee (outside container for edge-to-edge) -->
+        <div class="testimonials-marquee-wrap">
+            <div class="testimonials-marquee" id="testimonialsMarquee">
+
+                <!-- === Original 3 cards === -->
+                <div class="testimonial-card">
+                    <div class="t-card-top">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="t-badge"><i class="fas fa-check-circle"></i> Excellent Student</span>
+                    </div>
+                    <p class="testimonial-text">"Ali's Gym Management System was a standout project. He demonstrated
+                        strong back-end proficiency, utilizing ASP.NET MVC, Entity Framework Core, and SQL Server to
+                        build a highly structured and scalable system."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MA</div>
+                        <div class="testimonial-info">
+                            <h4>Mariam Ali</h4>
+                            <span>Senior Instructor, Route Academy</span>
+                        </div>
+                        <a href="#" class="t-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="t-card-top">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="t-badge"><i class="fas fa-bolt"></i> Detail-Oriented</span>
+                    </div>
+                    <p class="testimonial-text">"Ali is highly disciplined and capable of handling complex technical
+                        topics. His structured problem-solving skills and strong logical thinking make him exceptionally
+                        well-suited for advanced data systems."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">IG</div>
+                        <div class="testimonial-info">
+                            <h4>Ibrahim Gomaa</h4>
+                            <span>Database Professor</span>
+                        </div>
+                        <a href="#" class="t-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="t-card-top">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="t-badge"><i class="fas fa-graduation-cap"></i> Committed Learner</span>
+                    </div>
+                    <p class="testimonial-text">"Ali demonstrated a strong technical understanding of back-end and
+                        front-end concepts. He consistently applies best practices and showcases excellent programming
+                        logic, delivering high-quality web solutions."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AA</div>
+                        <div class="testimonial-info">
+                            <h4>Ahmed Abd El-Aziz</h4>
+                            <span>Web Technology Professor</span>
+                        </div>
+                        <a href="#" class="t-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- === Duplicate 3 cards for seamless infinite loop === -->
+                <div class="testimonial-card">
+                    <div class="t-card-top">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="t-badge"><i class="fas fa-check-circle"></i> Excellent Student</span>
+                    </div>
+                    <p class="testimonial-text">"Ali's Gym Management System was a standout project. He demonstrated
+                        strong back-end proficiency, utilizing ASP.NET MVC, Entity Framework Core, and SQL Server to
+                        build a highly structured and scalable system."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MA</div>
+                        <div class="testimonial-info">
+                            <h4>Mariam Ali</h4>
+                            <span>Senior Instructor, Route Academy</span>
+                        </div>
+                        <a href="#" class="t-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="t-card-top">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="t-badge"><i class="fas fa-bolt"></i> Detail-Oriented</span>
+                    </div>
+                    <p class="testimonial-text">"Ali is highly disciplined and capable of handling complex technical
+                        topics. His structured problem-solving skills and strong logical thinking make him exceptionally
+                        well-suited for advanced data systems."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">IG</div>
+                        <div class="testimonial-info">
+                            <h4>Ibrahim Gomaa</h4>
+                            <span>Database Professor</span>
+                        </div>
+                        <a href="#" class="t-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="t-card-top">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <span class="t-badge"><i class="fas fa-graduation-cap"></i> Committed Learner</span>
+                    </div>
+                    <p class="testimonial-text">"Ali demonstrated a strong technical understanding of back-end and
+                        front-end concepts. He consistently applies best practices and showcases excellent programming
+                        logic, delivering high-quality web solutions."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AA</div>
+                        <div class="testimonial-info">
+                            <h4>Ahmed Abd El-Aziz</h4>
+                            <span>Web Technology Professor</span>
+                        </div>
+                        <a href="#" class="t-social"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div><!-- end marquee -->
+        </div><!-- end wrap -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Let's Talk</h3>
+                    <p>Have a project in mind or want to discuss the latest in tech? Feel free to reach out.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:alimustafa8372@gmail.com"
+                            style="color:inherit; text-decoration:none;">alimustafa8372@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/ali-mustafa-daeny" target="_blank" rel="noopener"
+                            style="color:inherit;text-decoration:none;">/in/ali-mustafa-daeny</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Cairo, Egypt</span>
+                    </div>
+                </div>
+
+                <div id="success-message" class="success-message">
+                    <i class="fas fa-check-circle"></i> Your message has been sent successfully!
+                </div>
+                <form class="contact-form" id="contactForm" action="#" method="POST">
+                    <!-- Config: Redirect to same page after submission (optional but recommended) -->
+                    <input type="hidden" name="_next" value="#hero">
+                    <input type="hidden" name="_subject" value="New Submission from Portfolio!">
+                    <input type="hidden" name="_captcha" value="false">
+
                     <div class="form-group">
-                        <input type="text" placeholder="Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Send Message <i
+                            class="fas fa-paper-plane"></i></button>
                 </form>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <div class="container footer-grid">
+            <!-- Brand -->
+            <div class="footer-brand">
+                <a href="#hero" class="logo footer-logo">A.<span>M</span></a>
+                <p>Back-End Engineer focused on building scalable applications with clean, maintainable code.
+                </p>
+                <div class="footer-socials">
+                    <a href="https://github.com/ali7510" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ali-mustafa-daeny" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:alimustafa8372@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About</a></li>
+                    <li><a href="#skills"><i class="fas fa-chevron-right"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                    <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> alimustafa8372@gmail.com</li>
+                    <li><i class="fab fa-linkedin"></i> /in/ali-mustafa-daeny</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Egypt</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 <span>Ali Mustafa</span>. All rights reserved</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Scripts -->
+    <script src="Script.js"></script>
 </body>
 
 </html>
